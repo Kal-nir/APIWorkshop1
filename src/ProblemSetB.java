@@ -1,6 +1,19 @@
 import java.util.*;
 
 public class ProblemSetB {
+
+    /*
+    Problem Set B
+    Title: Jazzed Up Words
+
+    Description: You’re an employee at Word Jazz Piers Inc., you are involved in a project that encrypts data for a database system.
+    This project is part of the server of where the database is stored. The objective is to encrypt incoming data,
+    and to do authentication of user login system with the decryption algorithm.
+    The encryption and decryption algorithms are already provided.
+
+    Objective: To work with ADTs and Objects in an app development setting.
+     */
+
     public static void main(String[] args) {
         CaesarCipher cipher = new CaesarCipher(5);
         Authentication authentication = new Authentication();
@@ -22,6 +35,7 @@ public class ProblemSetB {
 
     static boolean Login(Authentication authentication, CaesarCipher cipher, String username, String password) {
         // WORK HERE
+
         return false;
     }
 
@@ -74,12 +88,7 @@ public class ProblemSetB {
         }
 
         public boolean Authenticate(String username, String password, CaesarCipher cipher) {
-            // WORK HERE
-            Account account = SearchAccount(username);
-            if (account != null) {
-                String incomingPass = cipher.decrypt(password);
-                if (cipher.decrypt(account.getPassword()).equals(incomingPass)) return true;
-            }
+            // Work Here
             return false;
         }
     }

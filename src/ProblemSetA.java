@@ -1,4 +1,18 @@
 public class ProblemSetA {
+
+    /*
+    Problem Set A
+    Title: A Time in the Delta World
+
+    Description: You’re an employee at FedUp Games, you are involved in a project about a platformer game.
+    Your task is to create the movement algorithm of the player. The Vector Object is responsible with the movement of the player.
+    All you need to do is to return the movement based on the speed times the vector. As for the jumping aspect,
+    check if the character is on the floor, and if true, the character will be able to jump.
+    Every product must be multiplied by the delta time.
+
+    Objective: To work with ADTs and Objects in a game setting.
+     */
+
     public static void main(String[] args) {
         final float DELTA = 0.60122f;
         Vector2D position = new Vector2D(0, 0);
